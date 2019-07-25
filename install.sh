@@ -1,4 +1,3 @@
-
 #!/bin/bash
 ##检查操作系统
 check_sys(){
@@ -88,21 +87,35 @@ case "$status" in
 esac
 sleep 1
 echo -e "${Info} 请等待系统自动操作......"
-cd /www/wwwroot/$website
 ##安装unzip
 echo -e "${Info} 正在检测安装unzip工具"
-#yum install unzip  -y
+yum install unzip  -y
 echo -e "${Info} 检测安装unzip工具已完成"
 sleep 1
-##下载解压拷贝源码
-
-#sleep 1
-##初始化站点信息
-#echo -e "${Info} 正在配置站点基本信息"
-#cd /www/wwwroot/$website
-
-
-
+##检查并创建文件夹
+cd /www/wwwroot/$website/public/theme/
+filepathone="/www/wwwroot/$website/public/theme/7colorblog.com/"
+filepathtwo="/www/wwwroot/$website/public/theme/7colorblog.com/$themetype/"
+if [ ! -d "$filepathone" ];then
+mkdir $filepathone
+else
+echo "文件夹已经存在"
+fi
+if [ ! -d "$filepathtwo" ];then
+mkdir $filepathtwo
+else
+echo "文件夹已经存在"
+fi
+cd $filepathtwo
+#下载并解压资源文件
+rm -rf static static/
+wget -N --no-check-certificate $githubUrl/$themetype/static.zip
+unzip static.zip
+#处理tpl页面
+cd /www/wwwroot/$website/resources/views/material
+mv -f index.tpl $themetype.tpl
+wget -N --no-check-certificate $githubUrl/$themetype/index.tpl
+cd /root/
 ##重启nginx
 sleep 1
 echo -e "${Info} 正在重启NGINX"

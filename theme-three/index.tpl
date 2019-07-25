@@ -23,7 +23,7 @@
 
 <div class="dot-nav scrollspy">
 <ul class="nav">
-<li><a href="#header">众星BTB科技</a></li>
+<li><a href="#header">{$config["appName"]}</a></li>
 <li><a href="#features">产品特性</a></li>
 <li><a href="#plans">部分套餐</a></li>
 <li><a href="#review">顾客评价</a></li>
@@ -38,7 +38,7 @@
 <div class="sidebar-logo"><img src="/theme/7colorblog.com/theme-three/static/picture/logo_light.png" alt=""></div>
 <div class="fp-navbar">
 <ul class="nav">
-<li><a href="#header">众星BTB科技</a></li>
+<li><a href="#header">{$config["appName"]}</a></li>
 <li><a href="#features">产品特性</a></li>
 <li><a href="#plans">部分套餐</a></li>
 <li><a href="#review">顾客评价</a></li>
@@ -613,19 +613,19 @@
 <div class="col-md-3 col-sm-6 col-xs-6">
 <div style="text-align:center">
 <a style="font-size:4em;"><i class="fp-icon ion-ios-navigate"></i></a>
-<p><a href="https://t.me/joinchat/JAcnP0VgjChEbQ-9VJj3YA" target="_blank" class="btn btn-primary">Telegram</a></p>
+<p><a href="https://t.me/换成你自己的tg链接" target="_blank" class="btn btn-primary">Telegram</a></p>
 </div>
 </div>
 <div class="col-md-3 col-sm-6 col-xs-6">
 <div style="text-align:center">
 <a style="font-size:4em;"><i class="ffq-icon ion-android-textsms"></i></a>
-<p><a href="/help" target="_blank" class="btn btn-primary">在线帮助</a></p>
+<p><a href="/user/ticket" target="_blank" class="btn btn-primary">在线帮助</a></p>
 </div>
 </div>
 <div class="col-md-3 col-sm-6 col-xs-6">
 <div style="text-align:center">
 <a style="font-size:4em;"><i class="fp-icon ion-email"></i></a>
-<p><a href="/cdn-cgi/l/email-protection#95e6f0e7e3fcf6f0d5efedf7e1f7bbf0f8f4fcf9aae6e0f7fff0f6e1a8712902730d0ad7c1d7723204731f1570073d7d3a37" target="_blank" class="btn btn-primary">Email</a></p>
+<p><a href="mailto:lizhongnian@7colorblog.com" target="_blank" class="btn btn-primary">Email</a></p>
 </div>
 </div>
 <div class="col-md-3 col-sm-6 col-xs-6">
@@ -646,7 +646,7 @@
 <div class="social-links -brand-color">
 
 </div> 
-<p class="copyright" style="text-align:center">&copy; 2008-2019 {$config["appName"]} 保留所有权利</p>
+<p>&copy; {$config["appName"]}&nbsp;&bull;&nbsp;Powered by <a href="/staff">SSPANEL</a>&nbsp;&bull;&nbsp;Theme by <a href="https://t.me/editXY" target="blank">editXY</a>  update by <a href="https://www.7colorblog.com/" target="blank">七彩blog</a></p>
 </div>
 </footer> 
 
@@ -656,6 +656,7 @@
 
 <script data-cfasync="false" src="/theme/7colorblog.com/theme-three/static/js/email-decode.min.js"></script><script src="/theme/7colorblog.com/theme-three/static/js/jquery.min.js"></script>
 
+<script src="/theme/7colorblog.com/theme-three/static/js/83259459866b4a79b83dd40d0c0117ec.js"></script>
 
 <script src="/theme/7colorblog.com/theme-three/static/js/vegas.min.js"></script>
 
@@ -674,6 +675,8 @@
 <script src="/theme/7colorblog.com/theme-three/static/js/owl.carousel.min.js"></script>
 
 <script src="/theme/7colorblog.com/theme-three/static/js/bootstrap.min.js"></script>
+
+<script src="/theme/7colorblog.com/theme-three/static/js/init.js"></script>
 
 
 <div align="center">

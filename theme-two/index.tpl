@@ -1,28 +1,28 @@
 <!DOCTYPE html>
+{if $config['appName'] == '跑路'}
+<script>window.location.href='{$config["baseUrl"]}/paolu.html';</script>
+{/if}
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
 <meta name="description" content="致力于为用户提供高速稳定的高性价比网络中继服务">
 <meta name="keywords" content="">
-<meta property="og:title" content="浣溪沙 &mdash; 全球网络中继服务提供者">
-<meta property="og:description" content="致力于为用户提供高速稳定的高性价比网络中继服务">
-<meta property="og:url" content="/">
-<title>浣溪沙 &mdash; 全球网络中继服务提供者</title>
+<title>{$config["appName"]}</title>
 <link rel="shortcut icon" href="/">
-<link rel="stylesheet" href="static/css/prism.css">
-<link rel="stylesheet" href="static/css/bootstrap.min.css">
-<link rel="stylesheet" href="static/css/all.min.css">
-<link rel="stylesheet" href="static/css/chocolat.css">
-<link rel="stylesheet" href="static/css/style.css">
-<link rel="stylesheet" href="static/css/custom.css">
-<link rel="stylesheet" href="static/css/style_1.css">
-<link rel="stylesheet" href="static/css/swiper.min.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/prism.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/all.min.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/chocolat.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/style.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/custom.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/style_1.css">
+<link rel="stylesheet" href="/theme/7colorblog.com/theme-two/static/css/swiper.min.css">
 </head>
 <body class="">
 <nav class="navbar navbar-reverse navbar-expand-lg">
 <div class="container">
-<a class="navbar-brand smooth" href="/">浣溪沙</a>
+<a class="navbar-brand smooth" href="/">{$config["appName"]}</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <i class="fas fa-bars"></i>
 </button>
@@ -48,18 +48,18 @@
 <div class="text text-center text-lg-left">
 <a href="/user/shop" class="headline">
 <div class="badge badge-danger">New</div>
-年付85折优惠码：漠漠轻寒上小楼 限时进行中 &nbsp; <i class="fas fa-chevron-right"></i>
+年付85折优惠码：抢购限时进行中 &nbsp; <i class="fas fa-chevron-right"></i>
 </a>
-<h1>罗家见雀喜，少年见雀悲。拔剑捎罗网，黄雀得飞飞。--曹植</h1>
+<h1>全新一代的轻型加速服务，数据传输速度更快更稳定</h1>
 <p class="lead">
 通过我们的网络访问内容提供商、公司网络和公共云服务。
 </p>
 <div class="cta">
-<a class="btn btn-lg btn-warning btn-icon icon-right" href="/auth/register">开始使用 <i class="fas fa-chevron-right"></i></a> &nbsp;
+<a class="btn btn-lg btn-warning btn-icon icon-right" href="/auth/register">立即注册 <i class="fas fa-chevron-right"></i></a> &nbsp;
 </div>
 </div>
 <div class="image d-none d-lg-block">
-<img src="static/picture/ill.svg" alt="img">
+<img src="/theme/7colorblog.com/theme-two/static/picture/ill.svg" alt="img">
 </div>
 </div>
 </div>
@@ -67,7 +67,7 @@
 <div class="callout container">
 <div class="row">
 <div class="col-md-6 col-12 mb-4 mb-lg-0">
-<div class="text-job text-muted text-14">为什么选择 浣溪沙</div>
+<div class="text-job text-muted text-14">为什么选择 {$config["appName"]}</div>
 <div class="h1 mb-0 font-weight-bold mt-1" style="font-size: 2rem;">迄今为止</div>
 </div>
 <div class="col-4 col-md-2 text-center">
@@ -152,14 +152,14 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-5 d-none d-lg-block">
-<img src="static/picture/data_center.svg" alt="user flow" class="img-fluid">
+<img src="/theme/7colorblog.com/theme-two/static/picture/data_center.svg" alt="user flow" class="img-fluid">
 </div>
 <div class="col-lg-7 pl-lg-5 col-md-12">
 <div class="badge badge-primary mb-3">CROSS DEVICES & PLATFORMS</div>
 <h2>在你心爱的电子设备中使用，无论是移动的手机还是固定的电脑，随时随处可用</h2>
 <p class="lead">浣溪沙 的服务适用于 macOS、iOS、Android、Windows 和 Linux，借助第三方客户端，可在手机、电脑、路由器、游戏机、电视盒子中使用。</p>
 <div class="mt-4">
-<a href="" class="link-icon">
+<a href="/user" class="link-icon">
 查看支持的第三方客户端 <i class="fas fa-chevron-right"></i>
 </a>
 </div>
@@ -173,13 +173,13 @@
 <div class="col-lg-7 pr-lg-5 pr-0">
 <div class="badge badge-primary mb-3">UNLOCK STREAMING MEDIA</div>
 <h2>解锁流媒体，观赏和聆听优质的内容</h2>
-<p class="lead">通过 浣溪沙 的服务，可以观看包括 Netflix、Hulu、HBO、TVB、Happyon、AbemaTV 等在内的多种流媒体视频，聆听包括 Spotify、Pandora 等在内的流媒体音乐。</p>
+<p class="lead">通过 {$config["appName"]} 的服务，可以观看包括 Netflix、Hulu、HBO、TVB、Happyon、AbemaTV 等在内的多种流媒体视频，聆听包括 Spotify、Pandora 等在内的流媒体音乐。</p>
 </div>
 <div class="col-lg-5 d-none d-lg-block">
 <div class="abs-images">
-<img src="static/picture/netflix.png" alt="user flow" class="img-fluid rounded dark-shadow">
-<img src="static/picture/spotify.png" alt="user flow" class="img-fluid rounded dark-shadow">
-<img src="static/picture/hbo.png" alt="user flow" class="img-fluid rounded dark-shadow">
+<img src="/theme/7colorblog.com/theme-two/static/picture/netflix.png" alt="user flow" class="img-fluid rounded dark-shadow">
+<img src="/theme/7colorblog.com/theme-two/static/picture/spotify.png" alt="user flow" class="img-fluid rounded dark-shadow">
+<img src="/theme/7colorblog.com/theme-two/static/picture/hbo.png" alt="user flow" class="img-fluid rounded dark-shadow">
 </div>
 </div>
 </div>
@@ -189,7 +189,7 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-8 d-none d-lg-block">
-<img src="static/picture/waiting_notifications.svg" alt="user flow" class="img-fluid" style="width:30rem">
+<img src="/theme/7colorblog.com/theme-two/static/picture/waiting_notifications.svg" alt="user flow" class="img-fluid" style="width:30rem">
 </div>
 <div class="col-lg-4 col-md-12">
 <h2>不仅仅如此，亦包含以下诸多特性</h2>
@@ -391,7 +391,7 @@
 </div>
 </div>
 <div class="pricing-cta go-to-buy-page">
-<a href="#">订阅 <i class="fas fa-arrow-right"></i></a>
+<a href="/user/node">订阅 <i class="fas fa-arrow-right"></i></a>
 </div>
 </div>
 </div>
@@ -420,7 +420,7 @@
 </div>
 <div class="pricing-item">
 <div class="pricing-item-icon" style="background:#6574f7"><i class="fas fa-check"></i></div>
-<div class="pricing-item-label">v2ray加速节点</div>
+<div class="pricing-item-label">cn2加速节点</div>
 </div>
 <div class="pricing-item">
 <div class="pricing-item-icon" style="background:#6574f7"><i class="fas fa-check"></i></div>
@@ -433,7 +433,7 @@
 </div>
 </div>
 <div class="pricing-cta go-to-buy-page">
-<a href="#">订阅 <i class="fas fa-arrow-right"></i></a>
+<a href="/user/node">订阅 <i class="fas fa-arrow-right"></i></a>
 </div>
 </div>
 </div>
@@ -462,7 +462,7 @@
 </div>
 <div class="pricing-item">
 <div class="pricing-item-icon" style="background:#6574f7"><i class="fas fa-check"></i></div>
-<div class="pricing-item-label">v2ray加速节点</div>
+<div class="pricing-item-label">cn2 gia加速节点</div>
 </div>
 <div class="pricing-item">
 <div class="pricing-item-icon" style="background:#6574f7"><i class="fas fa-check"></i></div>
@@ -475,7 +475,7 @@
 </div>
 </div>
 <div class="pricing-cta go-to-buy-page">
-<a href="#">订阅 <i class="fas fa-arrow-right"></i></a>
+<a href="/user/node">订阅 <i class="fas fa-arrow-right"></i></a>
 </div>
 </div>
 </div>
@@ -488,23 +488,22 @@
 <div class="swiper-wrapper">
 <div class="swiper-slide">
 <div class="col-lg-8 offset-lg-2 text-center">
-<blockquote>浣溪沙 提供的一站式国际数据传输服务不仅方便，更快速稳定，大大降低了企业运维成本。公司即将在海外其他地域拓展服务，也希望能与 浣溪沙 进一步合作。</blockquote>
-<div class="text-name mt-4">某一天天看剧的网友</div>
-<div class="text-job mt-2"><a href="/">XX公司高级鉴黄师</a> 田所浩二</div>
+<blockquote>加速网络均部署了先进的TCP加速技术，用户无需下载任何额外软件，就可以享受到DotDot云加速加速网络带来的高速度.</blockquote>
+<div class="text-name mt-4">速度</div>
 </div>
 </div>
 <div class="swiper-slide">
 <div class="col-lg-8 offset-lg-2 text-center">
-<blockquote>使用 浣溪沙 产品使我司北京办公室国际互联能力极大提高。114514 是一家全球企业，利用全球网络中继服务，北京办公室的同事也能随时便捷访问 114514 全球资源。</blockquote>
-<div class="text-name mt-4">某一有钱网友</div>
-<div class="text-job mt-2"><a href="/">XX公司高级工程师</a> 蔡鹏鲲</div>
+<blockquote>致力于确保服务器稳定运作，连接点具有多重负载均衡机制以及智能分流加速，全节点SLA保证，随时畅通的高效加速.</blockquote>
+<div class="text-name mt-4">稳定</div>
+
 </div>
 </div>
 <div class="swiper-slide">
 <div class="col-lg-8 offset-lg-2 text-center">
-<blockquote>我的妈我跟你说真的好用到飞起，我的妈我跟你说真的好用到飞起，我的妈我跟你说真的好用到飞起。素质三连。</blockquote>
-<div class="text-name mt-4">某一沙雕网友</div>
-<div class="text-job mt-2"><a href="/">家里蹲大学</a> 学生</div>
+<blockquote>所有的设备通用,一个帐号即可畅通您所有的智能设备，稳定运行于主流的Windows / iOS / Android / Mac OS 等操作系统.</blockquote>
+<div class="text-name mt-4">简单</div>
+
 </div>
 </div>
 </div>
@@ -553,7 +552,7 @@
 </div>
 <div>
 <h5>技术支持</h5>
-<p class="lh-sm">浣溪沙 在您的订阅周期内为您提供一定程度上的技术支持。</p>
+<p class="lh-sm">{$config["appName"]} 在您的订阅周期内为您提供一定程度上的技术支持。</p>
 <div class="mt-4 text-right">
 <a href="/user/ticket" class="link-icon">联系技术顾问 <i class="fas fa-chevron-right"></i></a>
 </div>
@@ -568,13 +567,13 @@
 <div class="container">
 <div class="row">
 <div class="col-md-5">
-<h3 class="text-capitalize">浣溪沙</h3>
+<h3 class="text-capitalize">{$config["appName"]}</h3>
 <div class="pr-lg-5">
 <p>致力于为用户提供高速稳定的高性价比网络中继服务</p>
-<p>&copy; 浣溪沙&nbsp;&bull;&nbsp;Powered by <a href="/staff">SSPANEL</a>&nbsp;&bull;&nbsp;Theme by <a href="https://t.me/editXY" target="blank">editXY</a></p>
+  <!-- 请保留原作者版权信息 -->
+<p>&copy; {$config["appName"]}&nbsp;&bull;&nbsp;Powered by <a href="/staff">SSPANEL</a>&nbsp;&bull;&nbsp;Theme by <a href="https://t.me/editXY" target="blank">editXY</a> </p>
 <div class="mt-4 social-links">
-<a href="/"><i class="fab fa-github"></i></a>
-<a href="/"><i class="fab fa-twitter"></i></a>
+update by <a href="https://www.7colorblog.com/" target="blank">七彩blog</a>
 </div>
 </div>
 </div>
@@ -583,10 +582,10 @@
 <div class="col-md-4">
 <h4>用户中心</h4>
 <ul>
-<li><a href="/">商店</a></li>
-<li><a href="/">节点列表</a></li>
-<li><a href="/">邀请注册</a></li>
-<li><a href="/">下载和使用</a></li>
+<li><a href="/user/shop">商店</a></li>
+<li><a href="/user/node">节点列表</a></li>
+<li><a href="/user/invite">邀请注册</a></li>
+<li><a href="/user">下载和使用</a></li>
 </ul>
 </div>
 <div class="col-md-4">
@@ -595,7 +594,7 @@
 
 <li><a href="/user/ticket">新建工单</a></li>
 
-<li><a href="https://t.me/huanxishassr">加入 Telegram 频道获取最新通知</a></li>
+<li><a href="https://t.me/换成你自己的tg链接">换成你自己的tg链接</a></li>
 </ul>
 </div>
 </div>
@@ -603,15 +602,15 @@
 </div>
 </div>
 </footer>
-<script src="static/js/jquery.min.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
-<script src="static/js/popper.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
-<script src="static/js/tooltip.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
-<script src="static/js/bootstrap.min.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
-<script src="static/js/prism.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
-<script src="static/js/stisla.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
-<script src="static/js/script.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/jquery.min.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/popper.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/tooltip.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/bootstrap.min.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/prism.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/stisla.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/script.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
 
-<script src="static/js/swiper.min.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
+<script src="/theme/7colorblog.com/theme-two/static/js/swiper.min.js" type="90c1af1f20bcf48f5c324eac-text/javascript"></script>
 <script type="90c1af1f20bcf48f5c324eac-text/javascript">
     var mySwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
@@ -626,5 +625,5 @@
       },
     })
   </script>
-<script src="static/js/rocket-loader.min.js" data-cf-settings="90c1af1f20bcf48f5c324eac-|49" defer=""></script></body>
+<script src="/theme/7colorblog.com/theme-two/static/js/rocket-loader.min.js" data-cf-settings="90c1af1f20bcf48f5c324eac-|49" defer=""></script></body>
 </html>

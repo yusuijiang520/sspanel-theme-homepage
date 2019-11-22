@@ -26,6 +26,6 @@ ps:本脚本并未在所有机器都测试过，处于新生脚本，</br>
 
 
 
-下载客户端404解决方法
-cd /www/wwwroot/www.7colorblog.com
-php -n xcat initdownload
+下载客户端404解决方法</br>
+cd /www/wwwroot/www.7colorblog.com</br>
+php -n xcat initdownload</br>
